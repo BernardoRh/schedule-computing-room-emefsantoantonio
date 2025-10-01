@@ -3,7 +3,7 @@
   --foreground: #171717;
   --text: #0F0F0F;
   --input: #ffffff;
-  --placehplder: #606060;
+  --placeholder: #606060;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,7 +12,7 @@
     --foreground: #606060;
     --text: #ffffff;
     --input: #1B1B1B;
-    --placehplder: #606060;
+    --placeholder: #606060;
   }
 }
 

@@ -1,8 +1,7 @@
 'use client'
 
-import * as Clerk from '@clerk/elements/common'
 import * as SignIn from '@clerk/elements/sign-in'
-import { ClerkField, ClerkFieldError, ClerkInput, ClerkLabel, SignInContainer, SignInStep } from './sign-up.styled'
+import { ClerkField, ClerkFieldError, ClerkInput, ClerkLabel, SignInButtonAction, SignInContainer, SignInStep } from './sign-up.styled'
 
 export default function SignInPage() {
   return (
@@ -19,7 +18,7 @@ export default function SignInPage() {
                 <ClerkInput />
                 <ClerkFieldError />
             </ClerkField>
-            <SignIn.Action submit>Entrar</SignIn.Action>
+            <SignInButtonAction submit>ENTRAR</SignInButtonAction>
         </SignInStep>
       </SignIn.Root>
     </SignInContainer>

@@ -4,8 +4,10 @@ import {
 } from '@clerk/nextjs'
 import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import { Navigation } from "./components/navigation";
-import StyledComponentsRegistry from "./components/styledcomponentsregistry";
+import StyledComponentsRegistry from "./components/StyledComponentsRegistry";
+
+import { ptBR } from '@clerk/localizations'
+import { Navigation } from "./components/Navigation";
 
 const roboto = Roboto({
   variable: "--font-geist-sans",
@@ -28,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-     <ClerkProvider>
+     <ClerkProvider localization={ptBR} >
       <html lang="pt-br">
         <body className={`${roboto.variable} ${robotoMono.variable} antialiased`}>
           <Navigation/>
