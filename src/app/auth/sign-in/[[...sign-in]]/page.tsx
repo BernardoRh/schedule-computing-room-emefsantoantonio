@@ -1,26 +1,30 @@
 'use client'
 
 import * as SignIn from '@clerk/elements/sign-in'
-import { ClerkField, ClerkFieldError, ClerkInput, ClerkLabel, SignInButtonAction, SignInContainer, SignInStep } from './sign-up.styled'
+import { ClerkField, ClerkFieldError, ClerkFieldErrorContainer, ClerkInput, ClerkLabel, SignContainer, SignInButtonAction, SignInStep } from '../../auth.styled'
 
 export default function SignInPage() {
   return (
-    <SignInContainer>
+    <SignContainer>
       <SignIn.Root>
         <SignInStep name="start">
             <ClerkField name="identifier">
                 <ClerkLabel>Nome ou Email</ClerkLabel>
                 <ClerkInput />
-                <ClerkFieldError />
+                <ClerkFieldErrorContainer>
+                  <ClerkFieldError />
+                </ClerkFieldErrorContainer>
             </ClerkField>
             <ClerkField name="password">
                 <ClerkLabel>Senha</ClerkLabel>
                 <ClerkInput />
-                <ClerkFieldError />
+                <ClerkFieldErrorContainer>
+                  <ClerkFieldError />
+                </ClerkFieldErrorContainer>
             </ClerkField>
             <SignInButtonAction submit>ENTRAR</SignInButtonAction>
         </SignInStep>
       </SignIn.Root>
-    </SignInContainer>
+    </SignContainer>
   )
 }

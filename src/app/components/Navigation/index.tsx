@@ -1,7 +1,7 @@
 'use client'
 
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
-import { Header } from "./navigation.styled";
+import { Button, Header } from "./navigation.styled";
 
 
 export function Navigation(){
@@ -9,14 +9,14 @@ export function Navigation(){
         <Header>
             <SignedOut>
                 <SignInButton>
-                    <button>
+                    <Button>
                         Entrar
-                    </button>
+                    </Button>
                 </SignInButton>
                 <SignUpButton>
-                    <button>
+                    <Button>
                         Registrar-se
-                    </button>
+                    </Button>
                 </SignUpButton>
             </SignedOut>
             <SignedIn>
