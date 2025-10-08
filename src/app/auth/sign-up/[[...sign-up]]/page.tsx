@@ -19,25 +19,30 @@ export default function SignUpPage(){
                         <ClerkLabel>E-mail</ClerkLabel>
                         <ClerkInput/>
                         <ClerkFieldErrorContainer>
-                            <ClerkFieldError/>
+                            <ClerkFieldError lang="en"/>
                         </ClerkFieldErrorContainer>
                     </ClerkField>
                     <ClerkField name="password">
                         <ClerkLabel>Senha</ClerkLabel>
                         <ClerkInput/>
                         <ClerkFieldErrorContainer>
-                            <ClerkFieldError/>
-                        </ClerkFieldErrorContainer>
-                    </ClerkField>
-                    <ClerkField name="confirmPassword">
-                        <ClerkLabel>Confirmar Senha</ClerkLabel>
-                        <ClerkInput/>
-                        <ClerkFieldErrorContainer>
-                            <ClerkFieldError/>
+                            <ClerkFieldError lang="en"/>
                         </ClerkFieldErrorContainer>
                     </ClerkField>
                     <SignUp.Captcha />
                     <SignUpButtonAction submit>ENTRAR</SignUpButtonAction>
+                </SignUpStep>
+                <SignUpStep name="verifications">
+                    <SignUp.Strategy name="email_code">
+                        <h3>Check your email</h3>
+                        <ClerkField name="code">
+                            <ClerkLabel>Email Code</ClerkLabel>
+                            <ClerkInput/>
+                            <ClerkFieldErrorContainer>
+                                <ClerkFieldError />
+                            </ClerkFieldErrorContainer>
+                        </ClerkField>
+                    </SignUp.Strategy>
                 </SignUpStep>
             </SignUp.Root>
         </SignContainer>

@@ -12,6 +12,7 @@
     "@clerk/elements": "^0.23.65",
     "@clerk/localizations": "^3.25.5",
     "@clerk/nextjs": "^6.32.2",
+    "dayjs": "^1.11.18",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",

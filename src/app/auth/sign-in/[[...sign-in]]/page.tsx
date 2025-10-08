@@ -12,14 +12,14 @@ export default function SignInPage() {
                 <ClerkLabel>Nome ou Email</ClerkLabel>
                 <ClerkInput />
                 <ClerkFieldErrorContainer>
-                  <ClerkFieldError />
+                  <ClerkFieldError lang="en"/>
                 </ClerkFieldErrorContainer>
             </ClerkField>
             <ClerkField name="password">
                 <ClerkLabel>Senha</ClerkLabel>
                 <ClerkInput />
                 <ClerkFieldErrorContainer>
-                  <ClerkFieldError />
+                  <ClerkFieldError lang="pt-BR"/>
                 </ClerkFieldErrorContainer>
             </ClerkField>
             <SignInButtonAction submit>ENTRAR</SignInButtonAction>

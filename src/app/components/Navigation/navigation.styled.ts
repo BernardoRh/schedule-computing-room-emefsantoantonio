@@ -30,4 +30,7 @@ export const Button = styled.button`
     border: 0;
     cursor: pointer;
     box-shadow: 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
 `

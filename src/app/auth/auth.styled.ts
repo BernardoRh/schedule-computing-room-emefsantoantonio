@@ -13,7 +13,7 @@ export const SignContainer = styled.div`
     margin-top: 2rem;
 
     * {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 `
 
@@ -49,15 +49,16 @@ export const ClerkField = styled(Clerk.Field)`
 `
 
 export const ClerkFieldError = styled(Clerk.FieldError)`
-    font-size: 1rem;
+    font-size: 0.75rem;
     width: fit-content;
     height: fit-content;
     font-style: italic;
 `
 
 export const ClerkFieldErrorContainer = styled.div`
-    width: max-content;
-    height: 2rem;
+    width: fit-content;
+    min-height: 1.5rem;
+    max-height: 5rem;
     padding: 0.5rem 0.75rem;
 `
 

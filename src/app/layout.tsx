@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
      <ClerkProvider localization={ptBR} >
-      <html lang="pt-br">
+      <html lang="pt-BR">
         <body className={`${roboto.variable} ${robotoMono.variable} antialiased`}>
           <Navigation/>
           <StyledComponentsRegistry>
